@@ -4,8 +4,8 @@
   "description": "API prototype for Project 1",
   "main": "server.js",
   "scripts": {
-      "start": "node ./src/server.js",
-      "pretest": "eslint ./src --fix",
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
     "test": "echo \"Tests complete\""
   },
   "author": "Matthew Freeberg",
@@ -14,5 +14,8 @@
     "eslint": "^4.17.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "bloodhound-js": "^1.2.2"
   }
 }

@@ -5,6 +5,12 @@ html, body {
   padding: 0;
 }
 
+body {
+    background-image: linear-gradient(black, red, black);
+    background-attachment: fixed;
+    color: white;
+}
+
 #top {
   text-align: center;
   margin: 0 auto;
@@ -18,4 +24,26 @@ html, body {
   margin-top: 100px;
   font-size: 2em;
   text-align: center;
+}
+
+.card {
+    width: 18rem;
+    display: inline-block;
+    border-color: white;
+    background-color: rgba(255,255,255, 0.2);
+    font-size: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+#info {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#footer {
+    text-align: center;
+    text-transform: uppercase;
 }

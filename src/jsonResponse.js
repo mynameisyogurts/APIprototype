@@ -27,6 +27,7 @@ const getUsers = (request, response) => {
 // Provide a list of users, HEAD request
 const headUsers = (request, response) => respondJSONMeta(request, response, 200);
 
+
 // Adding a user to the users object
 const addUser = (request, response, body) => {
   userNum += 1;
@@ -64,9 +65,11 @@ const addUser = (request, response, body) => {
   users[index].actors = body.actors;
 
   if (responseCode === 201) {
-    responseJSON.message = 'Created Successfully';
+    responseJSON.message = `Added ${users[index].name}`;
+
     return respondJSON(request, response, responseCode, responseJSON);
   }
+
   return respondJSONMeta(request, response, responseCode);
 };
 
